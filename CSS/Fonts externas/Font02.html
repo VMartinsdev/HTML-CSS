@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts externas</title>
+    <style>
+        @font-face {
+            font-family: 'rosalia';
+            src: url(Rosalia.otf) format('opentype');
+            font-weight: normal;
+            font-style: normal;
+            /*
+                Tipos de format()
+                - Opentype (oft)
+                - Truetype(ttf)
+                - truetype-aat(apple advanced typography)
+            */
+        }
+        @font-face {
+            font-family: 'duck';
+            src: url(Rubber-Duck.ttf) format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body{
+            font-family: 'rosalia', Helvetica, sans-serif;
+        }
+        h1{
+            font-family: 'duck';
+        }
+    </style>
+</head>
+<body>
+    <h1>Fontes Exters</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora atque modi deserunt quisquam asperiores velit, tenetur quidem. Iure, porro velit alias tempora voluptates officia sint omnis repellat enim officiis? Cum.</p>
+</body>
+</html>

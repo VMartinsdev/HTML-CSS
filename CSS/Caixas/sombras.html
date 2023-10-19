@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sombras</title>
+    <style>
+        body{
+            background-color: rgb(155, 164, 172);
+            margin: 0;
+           
+        }
+        header{
+            background-color: aliceblue;
+            height: 100px;
+            border-radius: 20px;
+            margin: 10px;
+        }
+        header > h1{
+            text-align: center;
+        }
+        a{
+            margin-right: 10px;
+            margin-left: 10px;
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }
+        a:hover{
+            color: blue;
+            text-decoration: underline;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        main{
+            background-color: aliceblue;
+            padding:10px;
+            margin: 10px;  
+            border-radius: 10px 40px; 
+        }
+        section{
+            background-color: rgb(155, 164, 172);
+            border-radius: 20px;
+            padding: 10px;
+        }
+        article{
+            background-color: rgb(89, 99, 107);
+        }
+        footer{
+            background-color: rgb(80, 108, 132);
+            width: 100%;
+            
+        }
+        nav{
+            background-color: rgb(89, 99, 107);
+            margin: 10px;
+            box-shadow: 1px 1px 1px black;
+        }
+        .bola1{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: red;
+            
+        }
+        .bola2{
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            background-color: blue;
+            margin-right: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sombras</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">Link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+
+        <section>
+            <h2>Esporte Politica Tecnologia</h2>
+            <article>
+                <h2>Noticias sobre o brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut at voluptate neque cupiditate iusto iure excepturi, nihil aut delectus corporis facilis molestias minima recusandae architecto? Libero quae accusamus distinctio autem.</p>
+                <aside>
+                    <p>Escrito por Vitor Martins</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <h2>Criando uma bola dentro de outra</h2>
+    <div class="bola1">
+        <div class="bola2">
+            <div class="bola3"></div>
+        </div>
+    </div>
+    <footer>
+        <p>Criado e desenvolvido por Vitor Devs Web</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecercicio Caixa</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        header{
+            background-color: aliceblue;
+            height: 100px;
+        }
+        a{
+            text-decoration: none;
+            margin-right: 10px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        a:hover{
+            color: black;
+            font-size: 18px;
+        }
+        header>h1{
+            margin-bottom: 40px;
+        }
+        main{
+            background-color: aliceblue;
+            
+        }
+        h1{
+            text-align: center;
+        }
+        section{
+            background-color: rgb(205, 232, 255);
+            height: 800px;
+            margin-bottom: 20px;
+        }
+        article{
+            background-color: rgb(193, 226, 255);
+            margin: 30px;
+            height: 200px;
+            border-radius: 10px;
+            padding: 10px;
+            
+        }
+        aside{
+            background-color: rgb(90, 93, 94);
+        }
+        footer{
+            background-color: rgb(90, 93, 94);
+        }
+        /* Alinhado uma div dentro de outra*/
+        .bola1{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            border-radius: 50%;
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .bola2{
+            height: 50px;
+            width: 50px;
+            background-color: blue;
+            border-radius: 50%;
+            margin: auto;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Links para navegação</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Artigos cientificos</h1>
+            <article>
+                <h2>Artigo 1</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam quaerat exercitationem sunt delectus deserunt iste quia doloribus dicta sequi blanditiis. Amet nesciunt aliquam ullam commodi. Aspernatur, id itaque? Officiis, blanditiis!</p>
+            </article>
+            <article>
+                <h2>Artigo 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit facere repellendus et, necessitatibus voluptas rem cum assumenda voluptatem amet. In numquam, distinctio doloribus natus officia exercitationem. Mollitia aperiam officia illum?</p>
+                <aside>
+                    <p>Dom Lorem primeiro</p>
+                </aside>
+            </article>
+            <article>
+                <h2>Duas bolas div centralizadas</h2>
+                <div class="bola1">
+                    <div class="bola2"></div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>desenvolvido por Vmartins.Dev</footer>
+</body>
+</html>
