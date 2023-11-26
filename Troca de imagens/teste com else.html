@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troca de Imagens
+    </title>
+</head>
+<style>
+    img{
+        width: 400px;
+        height: 400px;
+    }
+</style>
+<body>
+    <h1>Teste Troca de imagens</h1>
+    <input type="button" value="Anterior" onclick="anterior()">
+    <img src="imagens/img 1.jpg" alt="" id="img1" title="img_1">
+    <input type="button" value="Próxima" onclick="proxima()" id="proxima">
+
+</body>
+<script>
+    function proxima(){
+        var img_1 = 'img_1'
+        var img_2 = 'img_2'
+        var img_3 = 'img_3'
+        var img_4 = 'img_4'
+        var img_5 = 'img_5'
+        var img = document.getElementById('img1')
+        var img_value = img.title
+        if(img_1 == img_value){
+            img.setAttribute('src', 'imagens/img 2.jpg')
+            img.setAttribute('title','img_2')
+        }
+        else if(img_2 == img_value){
+            img.setAttribute('src', 'imagens/img 3.jpg')
+            img.setAttribute('title','img_3')
+        }
+        else if(img_3 == img_value){
+            img.setAttribute('src', 'imagens/img 4.jpg')
+            img.setAttribute('title','img_4')
+        }
+        else if(img_4 == img_value){
+            img.setAttribute('src', 'imagens/img 5.png')
+            img.setAttribute('title','img_5')
+        }
+    }
+    function anterior(){
+        var img_1 = 'img_1'
+        var img_2 = 'img_2'
+        var img_3 = 'img_3'
+        var img_4 = 'img_4'
+        var img_5 = 'img_5'
+        var img = document.getElementById('img1')
+        var img_value = img.title
+        if(img_2 == img_value){
+            img.setAttribute('src', 'imagens/img 1.jpg')
+            img.setAttribute('title','img_1')
+        }
+        else if(img_3 == img_value){
+            img.setAttribute('src', 'imagens/img 2.jpg')
+            img.setAttribute('title','img_2')
+        }
+        else if(img_4 == img_value){
+            img.setAttribute('src', 'imagens/img 3.jpg')
+            img.setAttribute('title','img_3')
+        }
+        else if(img_5 == img_value){
+            img.setAttribute('src', 'imagens/img 4.jpg')
+            img.setAttribute('title','img_4')}}
+</script>
+</html>

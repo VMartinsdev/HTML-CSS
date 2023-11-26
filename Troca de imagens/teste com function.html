@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troca de Imagens
+    </title>
+</head>
+<style>
+    img{
+        width: 400px;
+        height: 400px;
+    }
+</style>
+<body>
+    <h1>Teste Troca de imagens</h1>
+    <input type="button" value="Anterior" onclick="anterior()" id="anterior">
+    <img src="imagens/img 1.jpg" alt="" id="img1">
+    <input type="button" value="Próxima" onclick="proxima()" id="proxima">
+</body>
+<script>
+    var img1 = 'imagens/img 1.jpg'
+    var img2 = 'imagens/img 2.jpg'
+    function proxima(){
+        var img = window.document.getElementById('img1')
+        var proxima = document.getElementById('proxima')
+        var anterior = document.getElementById('anterior')
+        img.setAttribute('src', 'imagens/img 2.jpg')
+        proxima.setAttribute('onclick', 'proxima3()')
+        anterior.setAttribute('onclick', 'anterior1')
+    }
+    function proxima3(){
+        var img = window.document.getElementById('img1')
+        var proxima = document.getElementById('proxima')
+        var anterior = document.getElementById('anterior')
+        img.setAttribute('src', 'imagens/img 3.jpg')
+        proxima.setAttribute('onclick', 'proxima4()')
+        anterior.setAttribute('onclick', 'anterior2')
+    }
+    function proxima4(){
+        var img = window.document.getElementById('img1')
+        var proxima = document.getElementById('proxima')
+        var anterior = document.getElementById('anterior')
+        img.setAttribute('src', 'imagens/img 4.jpg')
+        proxima.setAttribute('onclick', 'proxima5()')
+        anterior.setAttribute('onclick', 'anterior3')
+    }
+    function proxima5(){
+        var img = window.document.getElementById('img1')
+        var proxima = document.getElementById('proxima')
+        var anterior = document.getElementById('anterior')
+        img.setAttribute('src', 'imagens/img 5.png')
+        anterior.setAttribute('onclick', 'anterior4')
+    }
+    function anterior(){
+        var img = window.document.getElementById('img1')
+        var proxima = document.getElementById('proxima')
+        var anterior = document.getElementById('anterior')
+        img.setAttribute('src', 'imagens/img 5.png')
+        anterior.setAttribute('onclick', 'anterior4')
+    }
+            
+</script>
+</html>
