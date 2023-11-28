@@ -7,16 +7,20 @@
     </title>
 </head>
 <style>
-    img{
+    #img1{
         width: 400px;
         height: 400px;
     }
+    #seta_direita{
+        margin: auto;
+    }
+
 </style>
 <body>
-    <h1>Teste Troca de imagens</h1>
+    <h1 id="src">Teste Troca de imagens</h1>
     <input type="button" value="Anterior" onclick="anterior()">
     <img src="imagens/img 1.jpg" alt="" id="img1" title="img_1">
-    <input type="button" value="Próxima" onclick="proxima()" id="proxima">
+    <img src="imagens/seta_direita.png" id="seta_direita" onclick="proxima()">
 
 </body>
 <script>
@@ -31,6 +35,7 @@
         if(img_1 == img_value){
             img.setAttribute('src', 'imagens/img 2.jpg')
             img.setAttribute('title','img_2')
+            
         }
         else if(img_2 == img_value){
             img.setAttribute('src', 'imagens/img 3.jpg')
