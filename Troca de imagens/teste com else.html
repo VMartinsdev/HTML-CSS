@@ -9,11 +9,13 @@
 <style>
     #img1{
         width: 400px;
-        height: 400px;
-    }
+        height: 400px;}
+
     #seta_direita{
         margin: auto;
     }
+
+
 
 </style>
 <body>
@@ -32,7 +34,10 @@
         var img_5 = 'img_5'
         var img = document.getElementById('img1')
         var img_value = img.title
+        
+    
         if(img_1 == img_value){
+            img.style.transition = opacity 800ms;
             img.setAttribute('src', 'imagens/img 2.jpg')
             img.setAttribute('title','img_2')
             
