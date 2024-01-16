@@ -29,23 +29,48 @@ header > p{
     text-align: center;
     padding-bottom: 50px;
 }
-p{
+section{
     font-size: 3.5vw;
     font-family: var(--fonte3);
-    padding: 50px 20px 50px 20px;
+    line-height: 2em;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    padding-top: 10vh;
 }
-#joaninha{
+section > p{
+    padding-bottom: 2em;
+}
+
+#img01{
     background-image: url(imagens/background001.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center right;
-    padding: 50px;
+    box-shadow: inset 8px 8px 10px rgba(0, 0, 0, 0.213);
 
 }
-#joaninha > p{
-    color: white;
-    background-color: rgba(0, 0, 0, 0.375);
+#img02{
+    background-image: url(imagens/background002.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.txt_img > p{
     display: inline-block;
-    padding: 2px;
-
+    background-color: rgba(0, 0, 0, 0.581);
+    color: white;
+    padding: 5px;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+footer > p{
+    font-size: 1em;
+    font-family: var;
+}
+a{
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
 }
