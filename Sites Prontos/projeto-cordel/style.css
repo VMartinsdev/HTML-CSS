@@ -1,6 +1,5 @@
 @charset "UTF-8"
 
-
 @import url(); /*Erro ao tentar importar a fonte, colocando um @import ULR em cima de outra funcionou normalmente*/
 
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
