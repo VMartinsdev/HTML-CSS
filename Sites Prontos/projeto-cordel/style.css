@@ -1,5 +1,8 @@
 @charset "UTF-8"
 
+
+@import url(); /*Erro ao tentar importar a fonte, colocando um @import ULR em cima de outra funcionou normalmente*/
+
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
@@ -15,6 +18,9 @@
 }
 header{
     background-color: black;
+}
+header > p{
+    font-family: var(--fonte1);
 }
 h1{
     color: white;
@@ -64,13 +70,17 @@ footer{
     background-color: black;
     color: white;
     text-align: center;
+    padding: 10px;
 }
 footer > p{
     font-size: 1em;
-    font-family: var;
+    font-family: var(--fonte1);
 }
 a{
     font-weight: bolder;
     text-decoration: none;
     color: white;
+}
+a:hover{
+    text-decoration: underline;
 }
