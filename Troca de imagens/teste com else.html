@@ -13,8 +13,11 @@
 
     #seta_direita{
         margin: auto;
-    }
-
+}
+ h1:hover{
+            color: red;
+            transition-duration: 1s;
+        }
 
 
 </style>
@@ -35,16 +38,21 @@
         var img = document.getElementById('img1')
         var img_value = img.title
         
+        
+        
+        
     
         if(img_1 == img_value){
             img.setAttribute('src', 'imagens/img 2.jpg')
             img.setAttribute('title','img_2')
+            img.style.borderRadius = '20px'
+            
             
         }
         else if(img_2 == img_value){
             img.setAttribute('src', 'imagens/img 3.jpg')
             img.setAttribute('title','img_3')
-            
+            img.style.borderRadius = '0px'
         }
         else if(img_3 == img_value){
             img.setAttribute('src', 'imagens/img 4.jpg')
