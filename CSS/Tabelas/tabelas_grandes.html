@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas grandes</title>
+</head>
+<style>
+    table{
+        border-collapse: collapse;
+        width: 500px;
+    }
+    td, th{
+        border: 1px solid black;
+        text-align: center;
+    }
+    thead, tfoot{
+        color: white;
+        background-color: gray;
+    }
+    .num{
+        text-align: right;
+    }
+
+</style>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <table>
+        <caption>"LEGENDA"</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th scope="row" style="width: ;">Total de Habitantes</th>
+            <td class="num">84 352 783</td>
+        </tfoot>
+    </table>
+</body>
+</html>
