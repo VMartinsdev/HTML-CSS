@@ -2,3 +2,16 @@
     padding: 0px;
     margin: 0px;
 }
+.img_1{
+    width: 400px;
+    height: 400px;
+}
+.s_img_1{
+    border: 1px solid black;
+    padding: 10px;
+}
+p{
+    display: inline-block;
+    
+    
+}
