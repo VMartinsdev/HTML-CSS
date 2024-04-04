@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio_02</title>
+    <style>
+        td, th{
+            border: 1px solid black;
+        }
+        table{
+            border-collapse: collapse;
+            width: 400px;
+        }
+        .Cabecalho{
+            background-color: gray;
+            color: white;
+            text-align: left;
+        }
+        .medias{
+            background-color: gray;
+            color: white;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Desafio_02 criação de tabela</h1>
+    <table>
+        <thead>
+            <tr>
+                <th class="Cabecalho"rowspan="2"
+                scope="col" >Area</th>
+                <th class="Cabecalho" rowspan="2" scope="col">Disciplinas</th>
+                <th class="Cabecalho"colspan="2" scope="col">Notas</th>
+                <th class="Cabecalho"scope="col" rowspan="2">Medias</th>
+            </tr>
+            <tr>
+                <th class="Cabecalho" scope="col">Nota 1</th>
+                <th class="Cabecalho" scope="col">Nota 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4" scope="row">Exatas</th>
+                <td >Matematica</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Fisica</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Quimica</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <thead>
+                <tr>
+                    <th class="medias" colspan="4"> Media de Exatas</th>
+                    <td class="Cabecalho">0.0</td>
+                </tr>
+            </thead>
+            <tr>
+                <th rowspan="2">Humanas</th>
+                <td>História</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <thead>
+                <tr>
+                    <th class="medias" colspan="4">Média de Humanas</th>
+                    <td class="Cabecalho">0.0</td>
+                </tr>
+            </thead>
+        </tbody>
+    </table>
+</body>
+</html>
