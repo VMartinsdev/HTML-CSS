@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+body{
+    background: url(../imagens/fundo-madeira.jpg) no-repeat top center;
+    background-size: cover;
+
+}
+main{
+    height: 100vh;
+    position: relative;
+}
+
+#telefone{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 470px;
+    width: 233px;
+    background-color: blue;
+    background: url(../imagens/frame-iphone.png);
+    background-size: 233px 470px;
+}
+iframe{
+    position: relative;
+    top: 60px;
+    left: 17px;
+    width: 200px;
+    height: 354px;
+}
