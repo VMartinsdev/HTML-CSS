@@ -10,16 +10,24 @@
         <h1>Quiz de perguntas sobre farmácia</h1>
             <h2>Pergunta 1</h2>
             <form action="" id="formulario">
-                <ul>
-                    <li><input type="radio" name="p_1" id="p_1" value="E">resposta 1</li>
-                    <li><input type="radio" name="p_1" id="p_1" value="C">resposta 2</li>
-                    <li><input type="radio" name="p_1" id="p_1" value="E">resposta 3</li>
-                    <li><input type="radio" name="p_1" id="p_1" value="E">resposta 4</li>
-                    <input type="submit" value="enviar" id="btn_enviar">
-                    <p id="resolucao_1"></p>
-                </ul>
+                    <ol>
+                        <li><input type="radio" name="p_1" id="p_1" value="E">resposta 1</li>
+                        <li><input type="radio" name="p_1" id="p_1" value="C">resposta 2</li>
+                        <li><input type="radio" name="p_1" id="p_1" value="E">resposta 3</li>
+                        <li><input type="radio" name="p_1" id="p_1" value="E">resposta 4</li>
+                        <p id="resolucao_1"></p>
+                    </ol>
+                <h2>pergunta 2</h2>
+                    <ol>
+                        <li><input type="radio" name="p_2" id="p_2" vlue="E">resposta 1</li>
+                        <li><input type="radio" name="p_2" id="p_2" value="E">resposta 2</li>
+                        <li><input type="radio" name="p_2" id="p_2" value="E">resposta 3</li>
+                        <li><input type="radio" name="p_2" id="p_2" value="C">resposta 4</li>
+                        <p id="resolucao_2"></p>
+                    </ol>
+                <p id="resolucao_2"></p>
+                <input type="submit" value="enviar" id="btn_enviar">
             </form>
-            
     </main>
 </body>
 <script>
@@ -30,15 +38,29 @@
     btn_enviar.addEventListener('click', function(event){
         event.preventDefault();
         var resposta_1 = formulario.p_1.value
-
+        var resolução_1 = 'Insira aqui a resolução da primeira pergunta'
         if(resposta_1 == 'C'){
-            document.getElementById('resolucao_1').innerHTML = 'A resoista é essa'
+            document.getElementById('resolucao_1').innerHTML = resolução_1
             pontos += 1
         }
         else if(resposta_1 =='E'){
-            document.getElementById('resolucao_1').innerHTML = 'A resoista é essa'
+            document.getElementById('resolucao_1').innerHTML = resolução_1
         }
+
+        var resposta_2 = formulario.p_2.value
+        var resolução_2 = 'Insira aqui a resolução da segunda pergunta'
+        if(resposta_1 == 'C'){
+            document.getElementById('resolucao_2').innerHTML = resolução_2
+            pontos += 1
+        }
+        else if(resposta_1 =='E'){
+            document.getElementById('resolucao_2').innerHTML = resolução_2
+        }
+
     }
+    
+
+
     )
 </script>
 </html>
