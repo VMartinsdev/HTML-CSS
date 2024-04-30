@@ -112,6 +112,7 @@ var formulario = document.getElementById('formulario');
         else if(resposta_10 =='E'){
             document.getElementById('resolucao_10').innerHTML = resolução_10
         }
+        document.getElementById('acerto').innerHTML = `sua pontuação foi: ${pontos}`
     }
         
     )
