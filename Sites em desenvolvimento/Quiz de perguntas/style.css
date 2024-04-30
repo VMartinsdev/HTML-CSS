@@ -1,0 +1,50 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+:root{
+    --titulo: "Bungee Shade", sans-serif;
+    --pergunta: "Staatliches", sans-serif;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+   background-image: linear-gradient(to bottom, #FDD26B, #FE9EA2);
+   padding: 10px;
+}
+main{
+    padding: 20px;
+    margin: auto;
+    max-width: 800px;
+    
+}
+.alternativa{
+    margin-left: 20px;
+    font-size: 20px;
+}  
+h1{
+    font-family: var(--titulo);
+    text-align: center;
+    font-size: 50px;
+}
+.pergunta{
+    margin-top: 40px;
+    font-family: var(--pergunta);
+    font-size: 30px;
+
+}
+input{
+    margin-right: 10px;
+}
+p{
+    color: red
+}
+#btn_enviar{
+    font-family: var(--pergunta);
+    font-size: 20px;
+    padding: 5px;
+    margin: 30px;
+    border-radius: 10px;
+}
