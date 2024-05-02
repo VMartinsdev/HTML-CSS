@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data, time, month e number</title>
+</head>
+<body>
+    <h1>Elementos de data, time, month e number em inputs</h1>
+    <form action="cadastro.php" autocomplete="on">
+        <p>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" maxlength="30" autocomplete="name" required>
+        </p>
+        <p>
+            <label for="media">Média:</label>
+            <input type="number" name="media" min="0" max="10" step="0.1" value="5">
+        </p>
+        <p>
+            <label for="periodo">Período letivo</label>
+            <input type="month" name="periodo" id="periodo" required>
+        </p>
+        <p>
+            <label for="dia">Dia:</label>
+            <input type="date" name="dia" id="dia" required>
+        </p>
+        <p>
+            <label for="hora">Horário da prova:</label>
+            <input type="time" name="hora" id="hora" required>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar" required>
+        </p>
+    </form>
+</body>
+</html>
