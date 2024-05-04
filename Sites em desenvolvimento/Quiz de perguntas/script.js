@@ -1,4 +1,4 @@
-var formulario = document.getElementById('formulario');
+    var formulario = document.getElementById('formulario');
     var btn_enviar = document.getElementById('btn_enviar');
     var pontos = 0
 
