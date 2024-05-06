@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File, range e color</title>
+</head>
+<body>
+    <h1>Inputs do tipo: File, range e color</h1>
+    <p>Vamos brincar um pouco com o range e color e Javascript, e ver o que vai dar.</p>
+
+    <form action="" method="post">
+        <fieldset>
+            <legend>File, range e color</legend>
+            <p>
+                <label for="arquivo">Inserir arquivo:</label>
+                <input type="file" name="arquivo" id="arquivo">
+            </p>
+            <p>
+                <label for="seletor_valor">insira o seu nível de satisfação</label>
+                <input type="range" name="seletor_valor" id="seletor_valor" min="10" max="100" value="0" onmousemove="mover_range()">
+            </p>
+            <p>
+                <label for="cor">Insira a cor que deseja fazer o bloco a baixo se tornar</label>
+                <input type="color" name="cor" id="cor" onmousemove="mover_color()" onmouse>
+            </p>
+        </fieldset>
+    </form>
+
+<p id="resposta">Aqui irá aparecer o valor do range</p>
+<div id="bloco_cor" style="width: 250px; height: 250px; background-color: rgb(88, 169, 240);">
+    <p>A cor irá aparecer aqui </p>
+</div>
+</body>
+<script>
+    function mover_range(){
+        var resposta = document.getElementById('resposta')
+        var val_range = document.getElementById('seletor_valor')
+        val_range_value = val_range.value
+        resposta.innerHTML = val_range_value
+    }
+    function mover_color(){
+        var cor_bloco = document.getElementById('bloco_cor')
+        var valor_bloco = document.getElementById('cor')
+        var valor_bloco_value = valor_bloco.value
+        cor_bloco.style.backgroundColor = valor_bloco_value
+    }
+</script>
+</html>
