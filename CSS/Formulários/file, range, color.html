@@ -22,7 +22,7 @@
             </p>
             <p>
                 <label for="cor">Insira a cor que deseja fazer o bloco a baixo se tornar</label>
-                <input type="color" name="cor" id="cor" onmousemove="mover_color()" onmouse>
+                <input type="color" name="cor" id="cor" value="#005CC8"        onmousemove="mover_color()" onmouse>
             </p>
         </fieldset>
     </form>
@@ -44,6 +44,7 @@
         var valor_bloco = document.getElementById('cor')
         var valor_bloco_value = valor_bloco.value
         cor_bloco.style.backgroundColor = valor_bloco_value
+        setTimeout(mover_color, 60*1)
     }
 </script>
 </html>
