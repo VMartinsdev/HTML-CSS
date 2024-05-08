@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+<body>
+    <input type="color" name="cor_do_bloco" id="cor_do_bloco" onclick="mouse_move">
+    <div style="width: 400px; height: 400px; background-color: black;" id="bloco"></div>
+</body>
+<script>
+    var cor_do_bloco = document.getElementById('cor_do_bloco')
+    cor_do_bloco.addEventListener('click', function(mouse_move){
+        var cor_bloco = document.getElementById('bloco')
+        var valor_bloco = document.getElementById('cor_do_bloco')
+        var valor_bloco_value = valor_bloco.value
+        cor_bloco.style.backgroundColor = valor_bloco_value
+        
+    })
+    function mouse_move(){
+        
+        var cor_bloco = document.getElementById('bloco')
+        var valor_bloco = document.getElementById('cor_do_bloco')
+        var valor_bloco_value = valor_bloco.value
+        cor_bloco.style.backgroundColor = valor_bloco_value
+        setTimeout(mouse_move, 60*1);
+    }
+</script>
+</html>
