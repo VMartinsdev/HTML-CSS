@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>Elemtno output</h1>
+    <h2>Somando números</h2>
+    <form action="cadastro.php" method="post">
+        <fieldset>
+            <legend>OutPut somando números</legend>
+            <p>
+                <label for="n_1">Insira um valor:</label>
+                <input type="number" name="n_1" id="n_1" oninput="soma.innerHTML = Number(n_1.value) + Number(n_2.value)">
+            </p>
+            <p>
+                <label for="n_2">Insira um valor:</label>
+                <input type="number" name="n_2" id="n_2" oninput="soma.innerHTML = Number(n_1.value) + Number(n_2.value)">
+            </p>
+            <label for="soma">Soma:</label>
+            <output name="soma" id="soma">0</output>
+        </fieldset>
+    </form>
+    <form action="cadastro.php" method="post">
+        <fieldset>
+            <legend>output com color</legend>
+            <p>
+                <label for="cor">insira a cor que deseja:</label>
+                <input type="color" name="cor" id="cor" oninput="bloco_cor.style.backgroundColor = cor.value">
+            </p>
+                <div id="bloco_cor" style="background-color:black ; width: 400px; height: 400px;"></div>
+        </fieldset>
+    </form>
+</body>
+</html>
