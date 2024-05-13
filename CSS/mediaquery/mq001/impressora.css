@@ -1,0 +1,9 @@
+ul li{
+    display: none;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+article::after{
+    content: 'Essa impressão foi gerada através do site: www.VmartinsDev.com.br';
+}
