@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+:root{
+    --cor_fundo: #2222FF;
+}
+body{
+    background-color:var(--cor_fundo)
+}
+a{
+    text-decoration: none;
+}
+li{
+    display: inline-block;
+    margin: 10px;
+}
