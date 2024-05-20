@@ -8,16 +8,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 
-@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
 
 
-.poetsen-one-regular {
-    font-family: "Poetsen One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
 :root{
+    --font_titulo: 'Poetsen One'
     --fonte_texto:'Open Sans', sans-serif, bold;
     --cor_fundo: #2222FF;
     --cor_fonte: #FFC145;
@@ -54,7 +48,7 @@ h1{
 header{
     box-shadow: black 2px 2px 4px;
 }
-p{
-    font-family: 'Poetsen One';
+.logo{
     color: var(--cor_fonte);
+    font-family: var(--font_titulo);
 }
