@@ -5,16 +5,54 @@
     margin: 0px;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@font-face {
+    font-family: 'GasoekOne';
+    src: url(../GasoekOne-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 :root{
+    --fonte_texto:'Open Sans', sans-serif, bold;
     --cor_fundo: #2222FF;
+    --cor_fonte: #FFC145;
 }
 body{
-    background-color:var(--cor_fundo)
+    margin: 5px;
+    background-color:var(--cor_fundo);
+    box-shadow: black 0px 0px 4px 20px;
+    height: 98vh;
 }
-a{
+a{  color: white;
     text-decoration: none;
 }
 li{
     display: inline-block;
     margin: 10px;
+}
+.txt_1{  color: white;
+    font-size: 1.9vw;
+    font-family: var(--fonte_texto);
+}
+section{
+    display: flex;
+}
+main{
+    max-width: 800px;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+}
+header{
+    box-shadow: black 2px 2px 4px;
+}
+#logo{
+    color: var(--cor_fonte);
+    font-family: 'GasoekOne';
+
 }
