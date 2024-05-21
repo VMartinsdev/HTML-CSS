@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de perguntas</title>
+</head>
+<body>
+    <main>
+        <h1>Quiz de perguntas sobre farmácia</h1>
+            <h2>Pergunta 1</h2>
+            <form action="" id="formulario">
+                <ul>
+                    <li><input type="radio" name="p_1" id="p_1" value="E">resposta 1</li>
+                    <li><input type="radio" name="p_1" id="p_1" value="C">resposta 2</li>
+                    <li><input type="radio" name="p_1" id="p_1" value="E">resposta 3</li>
+                    <li><input type="radio" name="p_1" id="p_1" value="E">resposta 4</li>
+                    <input type="submit" value="enviar" id="btn_enviar">
+                    <p id="resolucao_1"></p>
+                </ul>
+            </form>
+            
+    </main>
+</body>
+<script>
+    var formulario = document.getElementById('formulario');
+    var btn_enviar = document.getElementById('btn_enviar');
+    var pontos = 0
+    
+    btn_enviar.addEventListener('click', function(event){
+        event.preventDefault();
+        var resposta_1 = formulario.p_1.value
+
+        if(resposta_1 == 'C'){
+            document.getElementById('resolucao_1').innerHTML = 'A resposta é essa'
+            pontos += 1
+        }
+        else if(resposta_1 =='E'){
+            document.getElementById('resolucao_1').innerHTML = 'A resoista é essa'
+        }
+    }
+    )
+</script>
+</html>
