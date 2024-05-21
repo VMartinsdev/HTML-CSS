@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+
+
+:root{
+    --font_titulo: 'Poetsen One';
+    --fonte_texto:'Open Sans', sans-serif, bold;
+    --cor_fundo: #2222FF;
+    --cor_fonte: #FFC145;
+}
+body{
+    margin: 5px;
+    background-color:var(--cor_fundo);
+    box-shadow: black 0px 0px 4px 20px;
+    max-height: 3000px;
+    min-height: 98vh;
+}
+
+header{
+
+}
+
+a{  color: white;
+    text-decoration: none;
+    font-family: var(--fonte_texto);
+    font-weight: bolder;
+}
+
+a:hover{
+    text-shadow: black 2px 2px 2px;
+    font-size: 20px;
+    transition-duration: 1s;
+    margin: 5px; 
+}
+
+#selecionado{
+    font-family: var(--fonte_texto);
+    font-weight: bolder;
+    font-size: 20px;
+    color: var(--cor_fonte);
+    border-bottom: 5px solid black;
+}
+.links{
+    display: inline-block;
+    margin: 10px ;
+    margin-bottom: 0px;
+}
+.txt{  
+    color: white;
+    font-size: 30px;
+    font-family: var(--fonte_texto);
+    padding: 20px;
+
+}
+
+.logo{
+    color: var(--cor_fonte);
+    font-family: var(--font_titulo);
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+main{
+    max-width: 800px;
+    margin: auto;
+}
+
+h1{
+    color: var(--cor_fonte);
+    font-family: var(--font_titulo);
+    text-align: center;
+    margin: 40px;
+    font-size: 40px;
+}
+
+#link_download{
+    color: var(--cor_fonte);
+    margin: auto;
+    font-size: 20px;
+
+}
+h2{
+    color: var(--cor_fonte);
+    font-family: var(--font_titulo);
+    text-align: center;
+    margin: 30px;
+    font-size: 40px;
+}
+
+
