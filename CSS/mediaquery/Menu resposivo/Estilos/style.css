@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body, html{
+    background-color: rgba(194, 189, 189, 0.979);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    text-align: center;
+    background-color: gray;
+}
+header{
+    margin-bottom: 20px;
+}
+menu{
+    display: none;
+}
+ul{
+    display: block;
+    background-color: rgb(102, 102, 102);;
+    text-decoration: none;
+}
+a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+    border: 1px solid rgba(212, 209, 209, 0.712);
+}
+a:hover{
+    background-color: rgb(75, 74, 74);
+}
+main{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    text-indent: 20px;
+    margin: auto;
+    width: 80vw;
+    padding: 20px;
+    text-align: justify;
+}
+p{
+    margin-bottom: 10px;
+}
+#menu_hamburguer{
+    padding: 10px;
+    color: white;
+    background-color: rgb(36, 36, 36);
+    display: block;
+    text-align: center;
+    cursor: pointer;
+}
+#menu_hamburguer:hover{
+    background-color: white;
+    color: black;
+}

@@ -1,7 +1,6 @@
 function alterar(){
-    var btn_alterar = document.getElementById('troca_btn')
-    btn_alterar.setAttribute("onclick", "confirmar()");
-    btn_alterar.value = 'Confirmar'
+    troca_btn.setAttribute("onclick", "confirmar()");
+    troca_btn.value = 'Confirmar'
     var texto_lorem = document.getElementById('texto_lorem')
     var conteudo_lorem = texto_lorem.innerHTML
     texto_lorem.innerHTML = `<textarea name="" id="alteracao_texto" cols="150" rows="2">${conteudo_lorem}</textarea>`
