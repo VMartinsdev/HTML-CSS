@@ -9,8 +9,9 @@
 </head>
 <body>
     <header>
-        <h1>Meu site</h1>
         <span id="menu_hamburguer" class="material-symbols-outlined" onclick="clickmenu()">menu</span>
+        <h1>Meu site</h1>
+        
         <menu id="menu">
             <ul>
                 <li><a href="#">Opção 1</a></li>
@@ -42,12 +43,16 @@
            else{
                 menu.style.display = 'block'
            }
-           if(menu_hamburguer.style.background == 'background-color: rgb(36, 36, 36);'){
-                menu_hamburguer.style.background = 'white'
+           if(menu_hamburguer.style.background == 'white'){
+                menu_hamburguer.style.background = 'rgb(36, 36, 36)'
            }
            else{
-                menu_hamburguer.style.background = 'background-color: rgb(36, 36, 36);'
+                menu_hamburguer.style.background = 'white'
            }
+           if(menu_hamburguer.style.color == 'black'){
+            menu_hamburguer.style.color = 'white'
+           }
+           else(menu_hamburguer.style.color = 'black')
         }
     </script>
 </body>

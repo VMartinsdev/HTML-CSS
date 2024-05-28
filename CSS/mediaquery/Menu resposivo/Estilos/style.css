@@ -9,8 +9,11 @@ body, html{
     font-family: Arial, Helvetica, sans-serif;
 }
 h1{
+    margin: 0px;
     text-align: center;
     background-color: gray;
+    display: inline-block;
+    width: 80vw;
 }
 header{
     margin-bottom: 20px;
@@ -25,9 +28,10 @@ ul{
 }
 a{
     text-align: center;
+    display: block;
     text-decoration: none;
     color: white;
-    display: block;
+
     padding: 10px;
     border: 1px solid rgba(212, 209, 209, 0.712);
 }
@@ -48,14 +52,12 @@ p{
     margin-bottom: 10px;
 }
 #menu_hamburguer{
+    margin: 0px;
     padding: 10px;
-    color: white;
     background-color: rgb(36, 36, 36);
-    display: block;
-    text-align: center;
+    color: white;
     cursor: pointer;
 }
 #menu_hamburguer:hover{
-    background-color: white;
-    color: black;
+
 }
