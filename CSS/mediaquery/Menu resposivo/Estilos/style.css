@@ -13,29 +13,32 @@ h1{
     text-align: center;
     background-color: gray;
     display: inline-block;
-    width: 80vw;
+    width: 100vw;
 }
-header{
-    margin-bottom: 20px;
+#cabeçalho{
+    display: flex;
+    margin: 0px 0px 20px 0px;
 }
 menu{
     display: none;
+    background-color: gray;
+    width: 120px;
 }
 ul{
-    display: block;
+    display: inline;
     background-color: rgb(102, 102, 102);;
     text-decoration: none;
 }
+li{
+    padding: 10px;
+    width: 100px;
+}
 a{
     text-align: center;
-    display: block;
     text-decoration: none;
     color: white;
-
-    padding: 10px;
-    border: 1px solid rgba(212, 209, 209, 0.712);
 }
-a:hover{
+li:hover{
     background-color: rgb(75, 74, 74);
 }
 main{
