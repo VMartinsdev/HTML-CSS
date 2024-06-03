@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+@media screen and (min-width:768px) {
+    #menu_hamburguer{
+        display: none;
+    }
+    menu{
+        display: block;
+    }
+    ul{
+        padding: 3px;
+    }   
+    li{
+        margin: -3px;
+        display: inline-block;
+    }
+    a{
+
+        display: inline-block;
+        background-color: gray  ;
+    }
+    main{
+        max-width: 768px;
+    }
+}

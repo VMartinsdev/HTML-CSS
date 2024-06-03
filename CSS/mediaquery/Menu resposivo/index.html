@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="Estilos/style.css">
+    <link rel="stylesheet" href="Estilos/style.css" media="all">
+    <link rel="stylesheet" href="Estilos/outros_dispositivos.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
-<body>
-    <header id="cabeçalho">
-        <span id="menu_hamburguer" class="material-symbols-outlined" onclick="clickmenu()">menu</span>
+<body onresize="mudoutamanho()">
+    <header>
         <h1>Meu site</h1>
-    </header>
+        <span id="menu_hamburguer" class="material-symbols-outlined" onclick="clickmenu()">menu</span>
     <menu id="menu">
         <ul>
             <li><a href="#">Opção 1</a></li>
@@ -20,6 +20,7 @@
             <li><a href="#">Opção 4</a></li>
         </ul>
     </menu>
+    </header>
     <main id="tes">
         <article>
             <h2>Testando midia queries</h2>
@@ -59,6 +60,12 @@
                 cabeçalho.style.margin = '0px 0px 20px 0px'
            }
            else(cabeçalho.style.margin ='0px')
+        }
+        function mudoutamanho(){
+            if(window.innerWidth >= 768){
+                menu.style.display = 'block'
+            }
+            else(menu.style.display = 'none')
         }
     </script>
 </body>
