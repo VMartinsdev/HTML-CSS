@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px){
+    
+    :root{
+        --cor01: #49a09d;
+        --cor02: #5f2c82;
+    }
+    body{
+        background-image: linear-gradient(to top, var(--cor01), var(--cor02))
+    }
+    #login{
+        width: 90vw;
+    }
+    #imagem{
+        float: left;
+        width: 30%;
+        height: 100%;
+    }
+    #formulario{
+        float: right;
+        width: 68%;
+    }
+    
+}

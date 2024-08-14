@@ -50,6 +50,7 @@ main{
     width: 80vw;
     padding: 20px;
     text-align: justify;
+    
 }
 p{
     margin-bottom: 10px;
@@ -60,7 +61,4 @@ p{
     background-color: rgb(36, 36, 36);
     color: white;
     cursor: pointer;
-}
-#menu_hamburguer:hover{
-
 }
