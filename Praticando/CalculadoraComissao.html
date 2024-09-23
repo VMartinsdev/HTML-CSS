@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculadora de Comissão VC</h1>
+    <label for="valorProduto" >Digite o valor do produto:</label>
+    <input type="number" id="valorProduto">
+    <input type="button" value="Calcular" onclick="Calcular()">
+    <p id="res"></p>
+    <script>
+        function Calcular(){
+            var valorProduto = document.getElementById('valorProduto')
+            var res = document.getElementById('res')
+            var valorComissao = valorProduto * 0.1
+            res.innerHTML = valorProduto
+
+        }
+    </script>
+</body>
+</html>
