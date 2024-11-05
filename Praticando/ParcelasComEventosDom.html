@@ -21,6 +21,14 @@
             var res = document.getElementById('res')
             var Total = qtdParcelas * valorCompra
             
+            if(qtdParcelas == 1){
+                res.innerHTML = 'O valor final da compra é: ' + Total
+            }
+            if(qtdParcelas == 2){
+                var juros = valorCompra * 0.03
+                res.innerHTML = 'O valor final da compra é: ' + (Total + juros)
+            }
+
         }
     </script>
 </body>

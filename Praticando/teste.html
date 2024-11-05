@@ -1,0 +1,36 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+</head>
+<body>
+<form name="form" id="form">
+Valor da compra
+<input type="number" size="15" name="valor" id="valor">
+Quantidade de Parcelas
+<input type="number" size="15" name="parcelas "id="parcelas">
+<button value="calcular" onclick="Calcular()">Calcular</button>
+<p> Resultado: </p>
+<p id="res"> </p>
+<script>
+    function Calcular(){
+var valor = parseInt(document.getElementById('valor').value);
+var parcelas = document.getElementById('parcelas').value;
+
+if (parcelas == 1){
+alert("O valor final da sua compra será: R$ " + valor);
+}
+else if (parcelas ==2){
+alert("O valor final da sua compra será: R$ " + (valor * parcelas + valor * 0.03))
+}
+else if (parcelas ==4){
+alert("O valor final da sua compra será: R$ " +(valor)+(valor*0.07));
+}
+else{
+alert("Quantidade de parcelas invalidas");
+}
+}
+</script>
+</body>
+</html>
