@@ -4,19 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=h1, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 4em;
+            color: rgb(16, 16, 150);
+        }
+    
+        p{
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <h1>Calculadora de Comissão VC</h1>
-    <label for="valorProduto" >Digite o valor do produto:</label>
+    <p><label for="valorProduto" >Digite o valor do produto:</label>
     <input type="number" id="valorProduto">
+    </p>
     <input type="button" value="Calcular" onclick="Calcular()">
     <p id="res"></p>
     <script>
         function Calcular(){
-            var valorProduto = document.getElementById('valorProduto')
+            var valorProduto = document.getElementById('valorProduto').value
             var res = document.getElementById('res')
-            var valorComissao = valorProduto * 0.1
-            res.innerHTML = valorProduto
+            res.innerHTML = valorProduto * 0.1
+
 
         }
     </script>
