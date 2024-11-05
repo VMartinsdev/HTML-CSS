@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="ValorCompra">Valor da compra:</label>
+    <input type="number" name="ValorCompra" id="ValorCompra">
+    <label for="QtdParcelas">Quantidade de Parcelas:</label>
+    <input type="number" name="QtdParcelas" id="QtdParcelas">
+    <input type="button" value="Calcular" onclick="Calcular()">
+    <p>Resultado:</p>
+    <p id="res"></p>
+
+    <script>
+        function Calcular(){
+            var valorCompra = document.getElementById('ValorCompra').value
+            var qtdParcelas = document.getElementById('QtdParcelas').value
+            var res = document.getElementById('res')
+            var Total = qtdParcelas * valorCompra
+            
+        }
+    </script>
+</body>
+</html>
