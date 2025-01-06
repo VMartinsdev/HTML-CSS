@@ -11,12 +11,16 @@
         <label for="sexo">Masculino</label>
         <input type="radio" name="sexo" id="sexo" value="feminino">
         <label for="sexo">Feminino</label>
-        <input type="submit" value="confirmar" >
-
-
-
-
-
+        <input type="submit" value="confirmar" onclick="confirmar()">
     </form>
+    <p id="res"></p>
 </body>
+<script>
+    function confirmar(){
+    event.preventDefault();
+    var sexoEscolhido = formularioSexo.sexo.value
+    var res = document.getElementById('res')
+    res.innerHTML = sexoEscolhido
+    }
+</script>
 </html>
