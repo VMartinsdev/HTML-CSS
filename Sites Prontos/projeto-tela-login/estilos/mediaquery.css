@@ -10,11 +10,11 @@
         background-image: linear-gradient(to top, var(--cor01), var(--cor02))
     }
     #login{
-        width: 90vw;
+        width: 730px;
     }
     #imagem{
         float: left;
-        width: 30%;
+        width: 28%;
         height: 100%;
     }
     #formulario{
@@ -22,4 +22,19 @@
         width: 68%;
     }
     
+}
+
+@media screen and (min-width: 992px){
+    #login{
+        width: 900px;
+    }
+    #imagem{
+        float: right;
+        width: 28%;
+    }
+    #formulario{
+        font-size: 1.5em;
+        float: left;
+        width: 68%;
+    }
 }

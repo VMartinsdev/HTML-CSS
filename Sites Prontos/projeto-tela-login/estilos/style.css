@@ -39,6 +39,7 @@ section{
     background: #5f2c82 url(../imagens/tela-login.jpg);
     height: 200px;
     background-size: cover;
+    background-position: left bottom;
 }
 #formulario{
     padding: 10px;
