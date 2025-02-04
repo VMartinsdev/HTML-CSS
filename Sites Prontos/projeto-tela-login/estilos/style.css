@@ -14,7 +14,7 @@
 body, html{
     width: 100vw;
     height: 100vh;
-    background-color: var(--cor02);
+    background-image: linear-gradient(to top, var(--cor01), var(--cor02));
     box-sizing: border-box;
 }
 main{
