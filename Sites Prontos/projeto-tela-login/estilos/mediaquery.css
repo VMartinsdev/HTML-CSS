@@ -10,7 +10,8 @@
         background-image: linear-gradient(to top, var(--cor01), var(--cor02))
     }
     #login{
-        width: 730px;
+        width: 740px;
+        height: 400px;
     }
     #imagem{
         float: left;
@@ -37,4 +38,15 @@
         float: left;
         width: 68%;
     }
+
+    input[type="submit"]{
+        height: 50px;
+        padding: 10px;
+    }
+
+    #esqSenha{
+        padding: 10px;
+        
+    }
+
 }

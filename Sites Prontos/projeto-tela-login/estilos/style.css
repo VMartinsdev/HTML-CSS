@@ -27,12 +27,13 @@ section{
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
     background-color: white;
-    width: 200px;
+    width: 230px;
     height: 530px;
     border-radius: 10px;
     overflow: hidden;
+    transform: translate(-50%, -50%);
+    transition-duration: 0.5s;
 }
 #imagem{
     display: block;
@@ -44,4 +45,76 @@ section{
 #formulario{
     padding: 10px;
     display: block;
+}
+
+input[type=submit]{
+    background-image: linear-gradient(180deg, #bce2e1, #316e6c);
+    color: white;
+    display: block;
+    width: 100%;
+    border: none;
+    height: 35px;
+    font-size: 1em;
+    font-weight: 600;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+input[type=submit]:hover{
+    border: rgb(41, 38, 38) 2px solid;
+    
+}
+
+#esqSenha{
+    background-image: linear-gradient(180deg, #9fecea, #034947);
+    display: block;
+    text-decoration: none;
+    font-size: 1em;
+    margin-top: 5px;
+    padding-top: 5px;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+    height: 30px;
+    border-radius: 5px;
+}
+
+#esqSenha:hover{
+    border: rgb(41, 38, 38) 2px solid;
+}
+
+#esqSenha i{
+    font-size: 1em;
+    
+}
+
+
+
+#campo{
+    background-image: linear-gradient(180deg, #a974cc, #8c4fb4 ,#5f2c82);
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0px;
+
+}
+
+#campo input{
+    background-color: #e6fffe;
+    height: 30px;
+    border-radius: 5px;
+    width: calc(100% - 50px);
+    margin-left: -10px;
+    transform: translateY(-4px);
+    border: none;
+}
+
+#campo i{
+    color: white;
+    height: 35px;
+    width: 35px;
+    padding: 5px;
+
+}
+
+#campo input:focus-within{
+    background-color: white;
 }
