@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container_verticalHorizontal{
+            margin: auto;
+            display: flex;
+            flex-flow: row nowrap;
+            background-color: burlywood;
+            height: 100px;
+         
+            justify-content: center;
+            align-items: center;
+        }
+        .container_vertical{
+            display: flex;
+            height: 100px;
+            align-items: center;
+            background-color: burlywood;
+        
+        }
+        .container_horizontal{
+            display: flex;
+            height: 100px;
+            justify-content: center;
+            background-color: burlywood;
+            align-items: flex-start;
+        }
+        .itemDoContainer{
+            background-color: aqua;
+            border: 1px black solid;
+        
+           
+        }
+    </style>
+</head>
+<body>
+    <h1>Alinhamento vertical e Horizontal</h1>
+    <div class="container_verticalHorizontal">
+        <div class="itemDoContainer">A</div>
+    </div>
+    <h1>Alinhamento Vertical</h1>
+    <div class="container_vertical">
+        <div class="itemDoContainer">A</div>
+    </div>
+    <h1>Alinhamento Horizontal</h1>
+    <div class="container_horizontal">
+        <div class="itemDoContainer">A</div>
+    </div>
+</body>
+</html>
