@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+        section{
+            background-color: bisque;
+            text-align: center;
+        }
+        nav{
+
+           
+            background-color: rgb(250, 216, 174);
+        }
+        a{
+            color: black;
+            text-decoration: none;
+            margin-right: 5px;
+        }
+        #container_coluna{
+            display:inline-flex;
+            width: 200px;
+            background-color:aqua;
+            height: 500px;
+            align-items: center;
+
+        }
+        #container_linha{
+            display: inline-flex;
+            background-color: blanchedalmond;
+            width: 200px;
+            height: 500px;
+            margin-left: -3px;
+            flex-direction: column;
+            justify-content: space-evenly;
+            
+        }
+        .div_texto{
+            border: 1px solid black;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .texto_esq{
+            
+            
+        }
+        main{
+            display: flex;
+            justify-content: center;
+        }
+        
+    
+       
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Meu site</h1>
+    </section>
+    <nav>
+        <a href="#">teste</a>
+        <a href="#">doaçoes</a>
+    </nav>
+
+    <main>
+    <div id="container_coluna">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa quod assumenda illo, veniam pariatur voluptatibus esse iure odio. Ullam inventore, rerum dolore impedit laboriosam natus dolor in harum atque illo?</p>
+        
+    </div>
+    <div id="container_linha">
+        <div class="div_texto">
+            <p class="texto_esq">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias itaque pariatur labore magnam amet aliquam natus nam porro ipsum placeat repellendus voluptatem id quis unde ad, minus facere, accusantium incidunt.   
+            </p>
+        </div>
+        <div class="div_texto">
+            <p class="texto_esq">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam culpa fuga ex vel ipsum, cumque quia nisi nobis assumenda, iusto corporis, consectetur adipisci hic necessitatibus ullam unde dicta eius veniam!</p>
+        </div>
+    </div>
+</main>
+</body>
+</html>
