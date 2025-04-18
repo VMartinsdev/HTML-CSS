@@ -1,5 +1,6 @@
 :root{
     --corSecundaria: #005029;
+    --Largura: width: 100px;
 }
 
 *{
@@ -11,13 +12,13 @@ body{
 
 }
 nav{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    gap: 20px;
+
     background-color: var(--corSecundaria);
     height: 50px;
     box-shadow: 0px 2px 8px 1px;
-    margin-bottom: 2px;
 }
 #containerCaramujoNav{
     height: 50px;
@@ -51,4 +52,8 @@ main{
 }
 .folder{
     width: 100%;
+}
+
+#folder2{
+    margin-top: -5px;
 }
