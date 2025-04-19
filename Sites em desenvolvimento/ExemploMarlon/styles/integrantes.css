@@ -13,26 +13,50 @@
 }
 body{
     width: 100vw;
-    
+    height: 100vh;   
 }
 nav{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-
     background-color: var(--corPrincipal);
     height: 80px;   
     box-shadow: inset 0px 2px 10px 1px;     
     margin-bottom: 0px;
+    position: relative;
 }
+
+#lista_link_fontes{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    background-color: rgb(75, 72, 72);
+    list-style-type: none;
+    padding: 5px;
+    border-radius: 5px;
+    display: none;
+}
+
+#fontes{
+    display: flex;
+    align-items: center;
+}
+
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+
 #containerCaramujoNav{
     height: 70px;
     width: 70px;
-    padding: 20px;
+    padding: 5px;
     border: 1.5px solid black;
     border-radius: 35px;
     background-color: #5f502b;
-    padding: 5px;
+    margin-right: 5px;
+
 }
 
 #caramujoNav{
@@ -40,7 +64,7 @@ nav{
     width: 100%;
 }
 
-ul{
+#lista_nav{
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -49,7 +73,7 @@ ul{
 .li_nav{
     text-decoration: none;
     font-family:var(--fonte);
-    font-size: 20px;
+    font-size: 8px;
     color: white;
     text-align: center;
     align-content: center;
@@ -57,6 +81,7 @@ ul{
 }
 
 main{
+    height: 100%;
     width: 100vw;
     text-align: center;
 }
@@ -71,11 +96,54 @@ main{
 #selecionado{
     color: var(--corPrincipal);
     background-color: var(--bordaSelecionado);
-    width: 100px;
-    height: 50px;
+    width: 60px;
+    height: 30px;
     text-align: center;
     align-content: center;
-    border-radius: 30px;
+    border-radius: 25px;
     font-family:var(--fonte);
-    font-size: 28px;
+    font-size: 12px;
+}
+
+
+
+@media screen and (min-width:992px) {
+
+    body{
+        width: 98.5vw;
+        
+    }   
+    nav{
+        width: 98.9vw;
+        height: 100px;
+    }
+
+    #containerCaramujoNav{
+        height: 90px;
+        width: 90px;
+        border-radius: 45px;
+    }
+
+    .li_nav{
+        font-size: 20px;     
+    
+    }
+    
+    main{
+        margin: auto;
+        width: 80%;
+        box-shadow: -1px 6px 20px 1px black;
+    }
+    
+    #selecionado{
+        width: 100px;
+        height: 50px;
+        border-radius: 30px;
+        font-size: 28px;
+    }
+
+    #lista_nav{
+        gap: 60px;
+    }
+
 }

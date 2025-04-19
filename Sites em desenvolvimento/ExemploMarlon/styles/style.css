@@ -38,6 +38,10 @@ nav{
     display: none;
 }
 
+#fontes{
+    display: flex;
+    align-items: center;
+}
 
 ul li a{
     color: white;
@@ -83,7 +87,6 @@ main{
 }
 .folder{
     width: 100%;
-    height: 100%;
 }
 
 #folder2{
