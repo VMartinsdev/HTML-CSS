@@ -33,7 +33,9 @@ nav{
     padding: 5px;
     border-radius: 5px;
     display: block;
-    position: absolute;
+    top: 50px;
+    position: absolute;position: relative;
+    
 
     
 }
@@ -41,7 +43,9 @@ nav{
 #fontes{
     display: flex;
     flex-wrap: wrap;
+    background-color: #4B4848;
     position: relative;
+    
 }
 
 ul li a{
