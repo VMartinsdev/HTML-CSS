@@ -13,7 +13,7 @@
 }
 body{
     width: 100vw;
-    height: 100vh;   
+    background-color: var(--corPrincipal);
 }
 nav{
     display: grid;
@@ -23,24 +23,36 @@ nav{
     height: 80px;   
     box-shadow: inset 0px 2px 10px 1px;     
     margin-bottom: 0px;
-    position: relative;
+}
+
+main{
+    display: flex;
+    width: 100vw;
+    height: calc(100vh - 80px);
 }
 
 #lista_link_fontes{
+    
+    position: absolute;
+    top: 20px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    position: absolute;
     background-color: rgb(75, 72, 72);
     list-style-type: none;
     padding: 5px;
     border-radius: 5px;
-    display: none;
+   
+    
+    
 }
 
 #fontes{
     display: flex;
-    align-items: center;
+    flex-wrap: nowrap;
+    position: relative;
+    top: 3px;
+    border-radius: 5px;
+    
 }
 
 ul li a{
@@ -68,42 +80,62 @@ ul li a{
     display: flex;
     gap: 20px;
     justify-content: center;
+    align-items: center;
     list-style: none;
 }
 .li_nav{
+  
     text-decoration: none;
     font-family:var(--fonte);
-    font-size: 8px;
+    font-size: 12px;
     color: white;
     text-align: center;
     align-content: center;
 
 }
 
-main{
-    height: 100%;
-    width: 100vw;
-    text-align: center;
-}
-.folder{
-    width: 100%;
-}
-
-#folder2{
-    margin-top: -8px;
-}
 
 #selecionado{
     color: var(--corPrincipal);
     background-color: var(--bordaSelecionado);
-    width: 60px;
+    width: 80px;
     height: 30px;
     text-align: center;
     align-content: center;
     border-radius: 25px;
     font-family:var(--fonte);
-    font-size: 12px;
+    font-size: 15px;
 }
+
+#menu_links_fontes{
+    cursor: pointer;
+    display: inline-block;
+    
+}
+
+#listaIntegrantes{
+    list-style: none;
+    color: #005029;
+    font-family: var(--fonte);
+    font-size: 20px;
+}
+
+#containerListaIntegrantes{
+    background-color: white;
+    height: 100%;
+    width: 70%;
+    padding: 10px;
+
+}
+
+#lateralNomeIntegrantes{
+    background-color: #005029;
+    width: 30%;
+    
+   
+}
+
+
 
 
 
@@ -111,6 +143,7 @@ main{
 
     body{
         width: 98.5vw;
+        background-color: white;
         
     }   
     nav{
@@ -133,10 +166,12 @@ main{
         margin: auto;
         width: 80%;
         box-shadow: -1px 6px 20px 1px black;
+        display: flex;
+
     }
     
     #selecionado{
-        width: 100px;
+        width: 150px;
         height: 50px;
         border-radius: 30px;
         font-size: 28px;
@@ -146,4 +181,7 @@ main{
         gap: 60px;
     }
 
+    #lista_link_fontes{
+        top: 30px;
+    }
 }
