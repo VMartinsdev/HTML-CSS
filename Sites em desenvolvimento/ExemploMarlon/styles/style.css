@@ -42,13 +42,9 @@ nav{
 
 #fontes{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 
     border-radius: 5px;
- 
-
-   
-
     
 }
 
@@ -117,6 +113,7 @@ main{
 
 #menu_links_fontes{
     cursor: pointer;
+    display: inline-block;
     
 }
 
@@ -162,4 +159,7 @@ main{
         gap: 60px;
     }
 
+    #lista_link_fontes{
+        top: 70px;
+    }
 }
