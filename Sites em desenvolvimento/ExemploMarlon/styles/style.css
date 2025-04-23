@@ -26,25 +26,29 @@ nav{
 }
 
 #lista_link_fontes{
+    
+    position: absolute;
+    top: 50px;
     display: flex;
     flex-direction: column;
     background-color: rgb(75, 72, 72);
     list-style-type: none;
     padding: 5px;
     border-radius: 5px;
-    display: block;
-    top: 50px;
-    position: absolute;position: relative;
+   
     
-
     
 }
 
 #fontes{
     display: flex;
     flex-wrap: wrap;
-    background-color: #4B4848;
-    position: relative;
+
+    border-radius: 5px;
+ 
+
+   
+
     
 }
 
@@ -73,10 +77,11 @@ ul li a{
     display: flex;
     gap: 20px;
     justify-content: center;
+    align-items: center;
     list-style: none;
 }
 .li_nav{
-    display: flex;
+  
     text-decoration: none;
     font-family:var(--fonte);
     font-size: 12px;
@@ -112,6 +117,7 @@ main{
 
 #menu_links_fontes{
     cursor: pointer;
+    
 }
 
 
